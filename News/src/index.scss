@@ -1,0 +1,19 @@
+@import "./styles/_global.scss";
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --primary-color: #00001a;
+  --primary-color-rgb: 0, 0, 26;
+  --secondary-color: #e8a953;
+  --accent-color: #dc665f;
+  --color-title: #f8f8f7;
+  --color-text: #636068;
+}
+
+#root {
+  height: 100%;
+}
+
+#next {
+  height: 100%;
+}

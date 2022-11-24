@@ -1,0 +1,44 @@
+.NewNews {
+  background-color: var(--primary-color);
+  padding: 24px;
+  flex: 1;
+
+  &__label {
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  &__list {
+    margin-top: 8px;
+  }
+
+  &__item {
+    padding: 32px 0;
+    border-bottom: 1px solid #999aa6;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    color: var(--color-title);
+    font-family: var(--font-family);
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+
+  &__text {
+    color: #999aa6;
+    font-family: var(--font-family);
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 400;
+  }
+}

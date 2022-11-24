@@ -1,0 +1,7 @@
+.App {
+  padding-block: 96px;
+
+  @media (max-width: 991px) {
+    padding-block: 0;
+  }
+}

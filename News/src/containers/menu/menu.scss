@@ -1,0 +1,51 @@
+.Menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: var(--primary-color-rgb), $alpha: 0.45);
+  z-index: 100;
+
+  &__container {
+    background-color: var(--color-title);
+    width: 260px;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+
+  &__contentIcon {
+    display: flex;
+  }
+
+  &__icon {
+    font-size: 24px;
+  }
+
+  &__nav {
+    padding-top: 56px;
+    padding-inline: 24px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+
+      & > li {
+        padding-block: 12px;
+        padding-inline: 0;
+
+        & > a {
+          font-size: 18px;
+          font-family: var(--font-family);
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.Header {
+  position: relative;
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 991px) {
+    padding: 16px;
+
+    & .row {
+      justify-content: space-between;
+    }
+  }
+}

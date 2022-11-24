@@ -1,0 +1,7 @@
+.Hero {
+  padding-block: 56px;
+
+  @media (max-width: 991px) {
+    padding-block: 16px;
+  }
+}

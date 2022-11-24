@@ -1,0 +1,11 @@
+.AnotherNews {
+  margin-top: 32px;
+
+  @media (max-width: 991px) {
+    & ul > li {
+      padding-block: 16px;
+    }
+
+    margin-top: 16px;
+  }
+}

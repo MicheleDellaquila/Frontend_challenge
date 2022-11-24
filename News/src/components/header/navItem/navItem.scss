@@ -1,0 +1,17 @@
+.NavItem {
+  padding-inline: 16px;
+
+  &:last-child {
+    padding-inline-end: 0px;
+  }
+
+  &__link {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}
