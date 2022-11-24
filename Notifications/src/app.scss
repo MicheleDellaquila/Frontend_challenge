@@ -1,0 +1,18 @@
+.App {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  padding-block: 16px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

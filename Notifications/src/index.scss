@@ -1,0 +1,21 @@
+@import "./styles/global";
+
+:root {
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --bg-color: #f9fafd;
+  --card-bg: #ffffff;
+  --primary-color: #042f7b;
+  --secondary-color: #f6fafc;
+  --color-title: #21232b;
+  --color-text: #a1a0a4;
+  --color-text-rgb: 161, 160, 164;
+  --color-message-notRead: #f25150;
+}
+
+#root {
+  height: 100%;
+}
+
+#next {
+  height: 100%;
+}

@@ -1,0 +1,51 @@
+@import "./variables";
+
+/* container */
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: $width-container;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding-container;
+  padding-right: $padding-container;
+
+  @media (max-width: 575px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * $padding-container);
+  margin-right: calc(-1 * $padding-container);
+
+  @media (max-width: 575px) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+/* column creation */
+@each $property, $key in $breakpoints {
+  @for $i from 1 through $columns {
+    @media (min-width: $key) {
+      .col-#{$property}-#{$i} {
+        flex: 0 0 auto;
+        width: (100% / $columns) * $i;
+        padding-left: $padding-container;
+        padding-right: $padding-container;
+
+        @media (max-width: 575px) {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+}

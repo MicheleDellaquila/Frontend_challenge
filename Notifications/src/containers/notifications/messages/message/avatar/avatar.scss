@@ -1,0 +1,15 @@
+.Avatar {
+  margin-right: 16px;
+  flex-shrink: 0;
+
+  &__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    @media (max-width: 575px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
